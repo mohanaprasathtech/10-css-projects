@@ -1,0 +1,28 @@
+body{
+    background: gray;
+}
+h1{
+    font-size: 100px;
+    text-shadow: 10px 10px 10px rgba(50, 50, 50, .5);
+    margin-top: 250px;
+    margin-left: 480px;
+}
+img{
+    z-index: 1;
+    animation: bullet 3s  linear infinite;
+    position: absolute;
+    top: 46%;
+    left: -60px;
+    width: 69px;
+}
+@keyframes bullet{
+    50%{
+        z-index: -1;
+    }
+    65%{
+        z-index: 1;
+    }
+    100%{
+        left: 500px;
+    }
+}

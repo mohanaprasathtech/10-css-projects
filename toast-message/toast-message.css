@@ -1,0 +1,36 @@
+body{
+    background: black;
+    display: flex;
+    margin-top: 300px;
+    align-content: center;
+    justify-content: center;
+}
+
+button#toast-button{
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #ff4754;
+    padding: 1.2rem 2.4rem;
+    border-radius: .5rem;
+    transition: opacity .2s;
+}
+button#toast-button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+#toast-messsage{
+    font-size: medium;
+    position: fixed;
+    bottom: -8rem;
+    user-select: none;
+    color: #ff4754;
+    background:white;
+    padding: 1.2rem 2.4rem;
+    border-radius: .2rem;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, .4);
+    transition: bottom .4s ease;
+}
+#toast-messsage.show{
+    bottom: 2rem;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="toast-message.css">
+    <title>Toast Message</title>
+</head>
+<body>
+    <button id="toast-button">Who is Developer?</button>
+    <div id="toast-messsage">Its Me</div>
+
+<script type="text/javascript">
+const button = document.getElementById('toast-button');
+const toast =  document.getElementById('toast-messsage');
+button.addEventListener('click', () => {
+    toast.classList.add('show');
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2000);
+});
+
+
+</script>
+    
+</body>
+</html>

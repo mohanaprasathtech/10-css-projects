@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    margin-left: 300px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOWYafyARtwBG6xfb8bv7gvhJltPpB_v7u6g&usqp=CAU);
+    height: 100%;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div{
+    
+    backdrop-filter: blur(10px);
+    height: 450px;
+    width: 500px;
+}

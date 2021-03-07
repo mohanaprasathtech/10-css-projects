@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="progress-bar.css">
+    <title>Progress bar</title>
+</head>
+
+<body>
+    <h1>loading...</h1><br><br>
+
+<div class="progress-container">
+    <div class="progress"></div>
+</div>
+<!--JS part-->
+<script type="text/javascript">
+    const progressbar = document.querySelector('.progress');
+    const changeProgress = progress => {
+        progressbar.style.width = `${progress}%`;
+    };
+    
+    setTimeout(() => changeProgress(22), 1000);
+    setTimeout(() => changeProgress(45), 2000);
+    setTimeout(() => changeProgress(85), 4600);
+    setTimeout(() => changeProgress(98), 5266);
+    setTimeout(() => changeProgress(100), 8000);
+ </script>
+
+</body>
+
+</html>
